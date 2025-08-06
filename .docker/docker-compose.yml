@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile
+    container_name: legend-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ..:/app
+      - /app/node_modules # Prevents host node_modules from overriding container's
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true # Helps with file watching in Docker for Mac/Windows
+    working_dir: /app
+    command: npm run dev
+    # Uncomment the following if you need to run in development with hot-reload
+    # command: sh -c "npm install && npm run dev"

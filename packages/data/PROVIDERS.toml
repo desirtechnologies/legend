@@ -1,0 +1,4 @@
+[[provider]]
+name = "Indeed"
+url = "https://www.indeed.com/"
+api = "https://api.indeed.com/"

@@ -1,0 +1,15 @@
+[[section]]
+file = "SECURITY.md"
+title = "Security"
+
+[[section]]
+file = "DEPENDENCIES.md"
+title = "Dependencies"
+
+[[section]]
+file = "LICENSE.md"
+title = "License"
+
+[[section]]
+file = "ROADMAP.md"
+title = "Roadmap"
